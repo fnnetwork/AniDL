@@ -3,7 +3,7 @@ import requests
 
 class Gogo:
     def __init__(self) -> None:
-        self.base = "https://api3.shubhamkr-sk8016.workers.dev"
+        self.base = "https://api3.electraop09.workers.dev"
 
     def gogo_search(self, query):
         data = requests.get(f"{self.base}/search/{query}").json()
@@ -20,5 +20,5 @@ class Gogo:
 
 class TechZApi(Gogo):
     def __init__(self) -> None:
-        self.base = "https://api3.shubhamkr-sk8016.workers.dev"
+        self.base = "https://api3.electraop09.workers.dev"
         super().__init__()
